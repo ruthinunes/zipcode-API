@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #000;
+  --primary-color: #ebce07;
+  --primary-color-lighter: rgb(241, 231, 142);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.main {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  padding: 20px;
+  gap: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  user-select: none;
+  color: var(--primary-color);
+}
+
+.form__inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.form__content {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 40px;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+} */
+
+.form__content label {
+  position: relative;
+  top: 0;
+  left: 10px;
+  font-size: 20px;
+  color: var(--primary-color);
+  transition: 0.5s;
+  cursor: text;
+}
+
+.form__content input {
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.form__content input:focus,
+.form__content input:valid {
+  height: 100%;
+}
+
+.form__content input:focus + label,
+.form__content input:valid + label {
+  top: -40px;
+  left: 0;
+}
+
+.form__button {
+  margin: auto;
+}
+
+.button {
+  justify-self: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: var(--primary-color-lighter);
+}

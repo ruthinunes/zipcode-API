@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ZIP CODE API</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">Sign up</h1>
+      <form class="form">
+        <div class="form__inputs">
+          <div class="form__content">
+            <input
+              type="text"
+              id="name"
+              class="form__input"
+              autocomplete="name"
+              required
+            />
+            <label for="name" class="form__label">Name</label>
+          </div>
+          <div class="form__content">
+            <input
+              type="email"
+              id="email"
+              class="form__input"
+              autocomplete="email"
+              required
+            />
+            <label for="email" class="form__label">Email</label>
+          </div>
+        </div>
+        <div class="form__inputs">
+          <div class="form__content">
+            <input type="text" id="zip" class="form__input" required />
+            <label for="zip" class="form__label">CEP</label>
+          </div>
+          <div class="form__content">
+            <input type="text" id="address" class="form__input" required />
+            <label for="address" class="form__label">Endereço</label>
+          </div>
+          <div class="form__content">
+            <input type="text" id="number" class="form__input" required />
+            <label for="number" class="form__label">Numero</label>
+          </div>
+        </div>
+        <div class="form__inputs">
+          <div class="form__content">
+            <input type="text" id="district" class="form__input" required />
+            <label for="district" class="form__label">Bairro</label>
+          </div>
+          <div class="form__content">
+            <input type="text" id="city" class="form__input" required />
+            <label for="city" class="form__label">Cidade</label>
+          </div>
+          <div class="form__content">
+            <input type="text" id="state" class="form__input" required />
+            <label for="state" class="form__label">Estado</label>
+          </div>
+        </div>
+        <div class="form__button">
+          <button id="form-button" class="button">Salvar</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
